@@ -16,8 +16,9 @@
         const urlParams = new URLSearchParams(queryString);
         const name = urlParams.get('name');
         const password = urlParams.get('password');
+        const email = urlParams.get('email');
         const results = document.getElementById('results');
-        results.innerHTML = `Name: ${name} <br> Password: ${password}`;
+        results.innerHTML = `Name: ${name} <br> Password: ${password} <br> Email: ${email}`;
     </script>    
 </body>
 </html>
