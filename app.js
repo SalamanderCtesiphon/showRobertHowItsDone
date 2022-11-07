@@ -1,13 +1,32 @@
-function Books (title, author, pages, read) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-    this.info = function() {
-        return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read}`;
-    }
+/* const myFirstObject = {
+    firstName: 'Richard',
+    favoriteAuthor: 'J.K. Conrad',
+};
+
+console.log(myFirstObject.firstName);
+console.log(myFirstObject.favoriteAuthor); */
+
+// Reference Data Types and Primitive Data Types
+/* 
+// Primitive Data Types String is stored as a value
+let person = "Bob";
+// anotherPerson is a reference to the same value as person
+let anotherPerson = person;
+// value of person is changed
+person = "Henry";
+
+console.log(person);
+
+console.log(anotherPerson);
+ */
+function PrintStuff (myDocuments) {
+    this.documents = myDocuments;
 }
 
-const theHobbit = new Books('The Hobbit', 'J.R.R. Tolkien', 295, 'not read yet');
+PrintStuff.prototype.print = function () {
+    console.log(this.documents);
+} 
 
-console.log(theHobbit.info());
+let newObj = new PrintStuff ("I'm a new Object and I can print.");
+
+newObj.print ();
