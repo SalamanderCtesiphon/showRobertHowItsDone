@@ -7,3 +7,7 @@ function Books (title, author, pages, read) {
         return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read}`;
     }
 }
+
+const theHobbit = new Books('The Hobbit', 'J.R.R. Tolkien', 295, 'not read yet');
+
+console.log(theHobbit.info());
