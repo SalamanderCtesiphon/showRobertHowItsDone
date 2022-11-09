@@ -10,10 +10,8 @@ ul {
 
 li {
     height: 120px;
-    width: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 200px;
+    padding: 15px;
     gap: 10px;
     background-color: blue;
     font-size: 25px;
