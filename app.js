@@ -2,14 +2,14 @@ const select = document.querySelector('select');
 const list = document.querySelector('ul');
 const h1 = document.querySelector('h1');
 
-let days;
+let days = 31;
 const choice = select.value;
 
-select.addEventListener('change', findDays);
+select.addEventListener('change', findDays(days, choice));
 
-function findDays () {
+function findDays (days, choice) {
     // add conditional here
-    days = 31;
+    
     if (choice === 'febuary') {
         days = 28;
     } else if (choice === 'april' || choice ==='june' ||
