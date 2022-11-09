@@ -1,25 +1,23 @@
 const select = document.querySelector('select');
-const para = document.querySelector('p');
+const list = document.querySelector('ul');
+const h1 = document.querySelector('h1');
 
-select.addEventListener('change', setWeather);
-
-function setWeather() {
+select.addEventListener('change', () => {
     const choice = select.value;
 
-    switch (choice) {
-      case 'sunny':
-        para.textContent = 'It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.';
-        break;
-      case 'rainy':
-        para.textContent = 'Rain is falling outside; take a rain coat and an umbrella, and don\'t stay out for too long.';
-        break;
-      case 'snowing':
-        para.textContent = 'The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.';
-        break;
-      case 'overcast':
-        para.textContent = 'It isn\'t raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.';
-        break;
-      default:
-        para.textContent = '';
+// add conditional here
+
+    createCalendar(days, choice);
+});
+
+function createCalendar(days, choice) {
+    list.innerHTML = '';
+    h1.textContent = choice;
+    for (let i = 1; i <= days; i++) {
+        const listItem = document.createElement('li');
+        listItem.textContent = i;
+        list.appendChild(listItem);
     }
 }
+
+createCalendar(31, 'January');
