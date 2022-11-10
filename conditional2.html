@@ -13,7 +13,6 @@
         box-sizing: border-box;
       }
     </style>
-    <link rel="stylesheet" href="../styles.css" />
   </head>
 
   <body>
@@ -25,27 +24,29 @@
   
   <script>
     let response;
-    let score = 75;
+    let score = 95;
     let machineActive = true;
   
     // Add your code here
-    if (machineActive === false) {
-		      response = 'You must turn the machine on.';
-    } else if (machineActive === true) {
+    if (machineActive === true) {
 		      if (score < 0 || score > 100) {
 					response = 'That is not possible, an error had occured';
-		      } else if (score >= 0 || score <= 19) {
+		      } else if (score >= 0 && score <= 19) {
 					response = 'That was a terrible score--total fail!';
-		      } else if (score >= 20 || score <= 39) {
+		      } else if (score >= 20 && score <= 39) {
 					response = 'You know some things, but it\'s a pretty bad score. Needs improvement.';
-		      } else if (score <= 69 || score >= 40) {
+		      } else if (score >= 40 && score <= 69) {
 					response = 'You did a passable job, not bad!';
-		      } else if (score >= 70 || score <= 89) {
+		      } else if (score >= 70 && score <= 89) {
 					response = 'That\'s a great score, you really know your stuff.';
-	              } else if (score >= 90 || score <= 100) {
+	        } else if (score >= 90 && score <= 100) {
 					response = 'What an amazing score! Did you cheat? Are you for real?';
-		      };
-    };
+		      } else if (machineActive === false) {
+            response = 'Please turn machine on.';
+          }
+    }else if (machineActive === false) {
+          response = 'Please turn machine on.';
+    }
 
     // Don't edit the code below here!
 
