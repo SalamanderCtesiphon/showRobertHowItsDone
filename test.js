@@ -25,4 +25,5 @@ function createCalander(days, choice) {
 		list.appendChild(listItem);
 	}
 }
-
+/*Now it is time to type a bunch of nonsense again. I should probably go to bed, but vim is fun
+  OK, let's type so more because being able to touch type is pretty cool as well. I guess I have learned a lot of cool skills doing the Odin Project. I am very thankful that I found the course. I must continue to do open-sourced education after I complete this course. I really would like to become more proficient in java scrit. I intend to acomplish that much */
