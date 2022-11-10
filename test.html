@@ -26,17 +26,29 @@
   <script>
     let season = 'summer';
     let response;
-
-    // Add your code here
-
+    // Add your code here    
+	  /* in this exercise i need to create a conditional that checks whether season contains the string
+	 'summer', and if so assigns a string to reponse that gives the user an appropriate message about the
+	 season. If not, it should assign a generic string to reponse that tells the user we dont'u know what
+	 season it is. */
+    switch (season) {
+		      case 'summer':
+			      response = 'Yo, it be hot and shit';
+			      break;
+		      case 'fall':
+			      response = 'fall yeah!' ;
+			      break;
+		      case 'winter':
+			      response = '';
+			      break;
+		      case 'spring':
+			      response = '';
+			      break;
     // Don't edit the code below here!
-
     const section = document.querySelector('section');
 
     let para1 = document.createElement('p');
     para1.textContent = response;
-    section.appendChild(para1);
-    
+    section.appendChild(para1);    
   </script>
-
 </html>
