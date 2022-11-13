@@ -27,4 +27,4 @@ function update(bgColor, textColor) {
 	html.style.backgroundColor = bgColor;
 	html.style.color - textColor;
 }
-
+// I had to make one minor change to this file 
