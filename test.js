@@ -28,3 +28,4 @@ function update(bgColor, textColor) {
 	html.style.color - textColor;
 }
 // I had to make one minor change to this file 
+// have you ever wondered
